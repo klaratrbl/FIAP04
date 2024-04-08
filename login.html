@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>FIAP - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="caixadologin">
+        <form id="loginForm" action="">
+            <h2>Login</h2>
+            <div class="input-caixa">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input id="rmInput" type="text" placeholder="RM" required>
+            </div>
+            <div class="input-caixa">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input id="senhaInput" type="password" placeholder="Senha" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="switch">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            alert(" Atividade 2 - Evoluindo a UX\n RM: rm123\n Senha: 123");
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0f0f0f;
+}
+
+.caixadologin {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(90deg, #0c0c0c, #0c0c0c);
+    border-radius: 50px;
+    box-shadow: 0 0 60px #ffffff;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center; 
+}
+
+h2 {
+    font-size: 1em;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.input-caixa {
+    position: relative;
+    width: 320px;
+    margin: 30px auto; 
+}
+
+.input-caixa input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #f2f2f2;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #f2f2f2;
+    padding: 0 20px 0 40px;
+}
+
+.input-caixa input::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.input-caixa .icon {
+    position: absolute;
+    left: 15px;
+    color: #f2f2f2;
+    font-size: 1.2em;
+    line-height: 55px;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #0d0e0d;
+    font-weight: 500;
+}
+
+body.dark-mode {
+    background-color: #f2f2f2;
+    color: #0d0e0d; 
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #0c0c0c;
+    padding: 20px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.sidebar.active {
+    height: 100%;
+}
+
+.sidebar-btn, .sidebar-close-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: #f2f2f2;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.sidebar-btn:hover, .sidebar-close-btn:hover {
+    background-color: #333;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #0c0c0c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.content-suporte {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.content-suporte h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-suporte p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.perfil {
+    text-align: center;
+}
+
+.perfil-foto {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 35%; 
+}
+
+.perfil-links {
+    margin-top: 10px;
+}
+
+.perfil-links a {
+    color: #ffffff;
+    font-size: 34px;
+    margin: 0 10px; 
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    width: 50px;
+    height: 26px;
+    background-color: #111;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #333;
+  }
+  
+  .fa-sun {
+    color: rgb(255, 255, 255);
+  }
